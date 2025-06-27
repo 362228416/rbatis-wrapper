@@ -2,7 +2,7 @@
 name = "rbatis-wrapper"
 version = "0.1.0"
 edition = "2024"
-authors = ["CC <zyluckstar@gmail.com>"]
+authors = ["CC <362228416@qq.com>"]
 description = "一个基于 rbatis 的现代化查询构建器，类似于 MyBatis Plus 的链式查询风格"
 license = "MIT"
 repository = "https://github.com/362228416/rbatis-wrapper"
