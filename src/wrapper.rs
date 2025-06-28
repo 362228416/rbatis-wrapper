@@ -238,6 +238,14 @@ impl QueryWrapper {
         rb.query_decode::<Option<T>>(&sql, vec![]).await
     }
 
+    // 执行删除
+    pub async fn delete(self, rb: &RBatis, table_name: &str) -> Result<u64, Error> {
+        let delete_sql = format!("delete from {}", table_name);
+        let sql = self.custom_sql(&delete_sql)
+            .build_sql(table_name);
+        Ok(rb.exec(&sql, vec![]).await?.rows_affected)
+    }
+
     // 修改分页方法
     pub async fn page<T>(&self, rb: &RBatis, table_name: &str, page_no: u64, page_size: u64) -> Result<Page<T>, Error>
     where

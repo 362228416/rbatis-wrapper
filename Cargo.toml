@@ -1,6 +1,6 @@
 [package]
 name = "rbatis-wrapper"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 authors = ["CC <362228416@qq.com>"]
 description = "一个基于 rbatis 的现代化查询构建器，类似于 MyBatis Plus 的链式查询风格"
